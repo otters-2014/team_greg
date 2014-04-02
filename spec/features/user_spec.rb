@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'the landing page' do
+feature 'on the landing page' do
   scenario 'a user can login to see their profile page' do
     user = User.create(email: 'team@greg.com', password: 'password', password_confirmation: 'password')
 
