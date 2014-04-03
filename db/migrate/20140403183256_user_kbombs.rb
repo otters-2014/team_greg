@@ -1,6 +1,6 @@
-class UsersKbombs < ActiveRecord::Migration
+class UserKbombs < ActiveRecord::Migration
   def change
-    create_table :users_kbombs do |t|
+    create_table :user_kbombs do |t|
       t.integer :user_id
       t.integer :kbomb_id
       t.text :note
