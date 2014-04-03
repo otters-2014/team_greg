@@ -2,7 +2,11 @@ KnowledgeBombs::Application.routes.draw do
 
   root 'sessions#new'
   post '/sessions' => 'sessions#create', as: :session #=> session_path
-  resources :users
+  post '/user' => 'users#create', as: :user
+  get '/users/new' => 'users#new', as: :new_user
+  post '/users' => 'users#create', as: :users
+  get '/user' => 'users#show', as: :show_user 
+  # resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
