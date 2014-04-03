@@ -1,7 +1,13 @@
 <%= @user.first_name %>
 <%= @user.last_name %>
 
-<%= @user.cohort %>
+<% if @user.cohort %>
+<%= @user.cohort.name %>
+
+<%= @user.cohort.location.name %>
+<%end%>
+
+
 
 
 <ul>
@@ -10,3 +16,4 @@
 <% end %>
 </ul>
 
+<%= @user.description %>

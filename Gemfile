@@ -53,3 +53,5 @@ group :development, :test do
   gem 'shoulda'
   gem 'faker'
 end
+
+gem 'simplecov','~> 0.7.1' ,:require => false, :group => :test
