@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :cohort_id
       t.string :location
       t.text :description
+
       t.timestamps
     end
   end
