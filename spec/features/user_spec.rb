@@ -23,8 +23,8 @@ feature 'on the sign-up page' do
   scenario 'a user can create a profile' do
 
     visit '/users/new'
-    fill_in 'signup[first]', with: 'Tony'
-    fill_in 'signup[last]', with: 'Ta'
+    fill_in 'signup[first_name]', with: 'Tony'
+    fill_in 'signup[last_name]', with: 'Ta'
     fill_in 'signup[email]', with: 'team@greg.com'
     fill_in 'signup[password]', with: 'password'
     fill_in 'signup[password_confirmation]', with: 'password'
