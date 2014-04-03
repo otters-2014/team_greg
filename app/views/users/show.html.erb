@@ -1,4 +1,12 @@
 <%= @user.first_name %>
 <%= @user.last_name %>
+
 <%= @user.cohort %>
+
+
+<ul>
+<% @user.kbombs.each do |kbombs| %>
+  <li><%= kbombs.name %></li>
+<% end %>
+</ul>
 
