@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    @user = User.find(params[:id])
   end
 
   def new
@@ -21,5 +22,4 @@ class UsersController < ApplicationController
     params.require(:signup).permit(:email, :first_name, :last_name, :password,
       :password_confirmation)
   end
-
 end

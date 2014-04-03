@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20140403190221) do
     t.datetime "updated_at"
   end
 
+  create_table "user_kbombs", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "kbomb_id"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
@@ -39,14 +47,6 @@ ActiveRecord::Schema.define(version: 20140403190221) do
     t.datetime "updated_at"
     t.string   "email"
     t.string   "password_digest"
-  end
-
-  create_table "users_kbombs", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "kbomb_id"
-    t.text     "note"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end

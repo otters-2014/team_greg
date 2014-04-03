@@ -9,7 +9,6 @@ feature 'on the landing page' do
     fill_in 'login[password]', with: 'password'
     click_button 'login'
 
-
     expect(current_path).to eq user_path(user)
   end
 
