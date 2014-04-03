@@ -28,4 +28,16 @@ describe SessionsController do
       expect(response).to redirect_to user_path(user)
     end
   end
+
+  describe "POST #destroy" do
+    it "sets the session to nil" do
+      session[:user_id] = 1
+      post(:destroy)
+      expect(session[:user_id]).to be_nil
+    end
+    it "redirects to root" do
+      post(:destroy)
+      expect(response).to redirect_to root_path
+    end
+  end
 end
