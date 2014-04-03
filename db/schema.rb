@@ -12,7 +12,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-
 ActiveRecord::Schema.define(version: 20140403190221) do
 
 
@@ -33,7 +32,6 @@ ActiveRecord::Schema.define(version: 20140403190221) do
   end
 
   create_table "users", force: true do |t|
-
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "cohort_id"
