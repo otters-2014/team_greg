@@ -9,4 +9,10 @@ class User < ActiveRecord::Base
 
   has_many :user_conversations
   has_many :conversations, through: :user_conversations
+
+
+
+  def full_name
+    first_name + ' ' + last_name
+  end
 end

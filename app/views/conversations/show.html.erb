@@ -1,0 +1,14 @@
+<h1> The Conversation Show Page!!!!</h1>
+<p class="invitation">Welcome,
+  <%= @conversation.users.map(&:full_name).join(' and ') %>
+</p>
+<div class="message_area">
+
+</div>
+<%= form_for(:message, :html => { :id => "message_form" } ) do |f| %>
+<%= f.label :text %>
+<%= f.text_field :text %>
+<%= f.label :send_message %>
+<input id="#conversation_id" type="hidden" value="<%= @conversation.id %>">
+<%= f.submit "send" %>
+<% end %>
