@@ -1,6 +1,7 @@
 KBOMBS
 ===============
-###A tool to ease the process of seeking help whether for pairing or mentoring. These are a skill name and a quick description. They can be created by admins, and users can pick from the list to add them to their profile. e.g. Name: Rails, Description: A framework that sits on Ruby and allows users to quickly assemble a webframe.
+###A tool to ease the process of seeking help whether for pairing or mentoring. These are a skill name and a quick description. They can be created by admins, and users can pick from the list to add them to their profile.
+
 [trello](https://trello.com/b/bG6YH86Q)
 
 ![schema](http://i.imgur.com/IZqWiht.png "Kbombs Schema")
