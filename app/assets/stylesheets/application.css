@@ -11,3 +11,143 @@
  *= require_self
  *= require_tree .
  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 10px #333;
+  width: 100%;
+  height: 80px;
+  background: #ea4a3c;
+}
+
+#navbar-title {
+  float: left;
+  line-height: 80px;
+  margin-left: 20px;
+  color: white;
+}
+
+.navbar-options li {
+  display: inline;
+  list-style: none;
+  line-height: 80px;
+}
+
+.signup-form {
+  margin-top: 20px;
+  padding: 0 15px;
+  background: #ea4a3c;
+  box-shadow: 0 2px 10px #333;
+}
+
+.signup-form li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 80px;
+  display: block;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+}
+
+/*Move objects to align left and right within a block*/
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/*Clearing fixed objects with classes that can be used*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9,
+.grid10,
+.grid11,
+.grid12,
+.grid13,
+.grid14,
+.grid15,
+.grid16 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4%;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9,
+.grid10,
+.grid11,
+.grid12,
+.grid13,
+.grid14,
+.grid15, {
+  margin-right: 2.4%;
+}
+
+input:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  border-color: #129FEA;
+}
