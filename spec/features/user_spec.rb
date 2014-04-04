@@ -23,11 +23,11 @@ feature 'on the sign-up page' do
   scenario 'a user can create a profile' do
 
     visit '/users/new'
-    fill_in 'signup[first_name]', with: 'Tony'
-    fill_in 'signup[last_name]', with: 'Ta'
-    fill_in 'signup[email]', with: 'team@greg.com'
-    fill_in 'signup[password]', with: 'password'
-    fill_in 'signup[password_confirmation]', with: 'password'
+    fill_in 'user[first_name]', with: 'Tony'
+    fill_in 'user[last_name]', with: 'Ta'
+    fill_in 'user[email]', with: 'team@greg.com'
+    fill_in 'user[password]', with: 'password'
+    fill_in 'user[password_confirmation]', with: 'password'
 
     expect{click_button 'signup'}.to change(User,:count).by(1)
 
