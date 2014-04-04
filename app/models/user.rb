@@ -6,4 +6,6 @@ class User < ActiveRecord::Base
   has_many :kbombs, through: :user_kbombs
 
   has_many :messages, foreign_key: "sender_id"
+
+  has_many :user_conversations
 end
