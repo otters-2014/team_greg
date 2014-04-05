@@ -1,0 +1,6 @@
+<% @kbombs.each do |kbomb| %>
+  Add:
+  <%= link_to("#{kbomb.name}", user_kbombs_path(@user, :kbomb_id => kbomb.id), method: :post)%>
+  Description: <%= kbomb.description %>
+  <br><br>
+<% end %>

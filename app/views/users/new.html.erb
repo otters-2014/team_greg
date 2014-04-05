@@ -1,9 +1,9 @@
 <%= form_for(@user) do |f| %>
-  <%= f.text_field :email %>
-  <%= f.text_field :first_name %>
-  <%= f.text_field :last_name %>
-  <%= f.text_field :password %>
-  <%= f.text_field :password_confirmation %>
-  <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
+  First Name: <%= f.text_field :first_name %>
+  Last Name: <%= f.text_field :last_name %>
+  Email: <%= f.text_field :email %>
+  Password: <%= f.text_field :password %>
+  Password Confirmation: <%= f.text_field :password_confirmation %>
+  Cohort: <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
   <%= f.submit 'signup' %>
 <% end %>
