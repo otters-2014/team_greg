@@ -40,10 +40,6 @@ ActiveRecord::Schema.define(version: 20140403200608) do
     t.integer  "user_id"
     t.integer  "kbomb_id"
     t.text     "note"
-  end
-
-  create_table "locations", force: true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,7 +48,6 @@ ActiveRecord::Schema.define(version: 20140403200608) do
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "cohort_id"
-    t.string   "location"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
