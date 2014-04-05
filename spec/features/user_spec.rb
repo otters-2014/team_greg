@@ -10,7 +10,7 @@ end
 
 feature 'on the login page' do
   scenario 'a user can login to see their profile page' do
-    user = User.create(email: 'team@greg.com', password: 'password', password_confirmation: 'password')
+    user = User.create(email: 'team@greg.com', password: 'password', password_confirmation: 'password', first_name: 'Greg', last_name: 'Santikian')
 
     visit '/login'
     fill_in 'email', with: 'team@greg.com'
