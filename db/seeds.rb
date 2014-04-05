@@ -13,7 +13,6 @@
                  password_confirmation: 'password',
                  email: Faker::Internet.email,
                  cohort_id: rand(1..5),
-                 location: Faker::Address.street_name,
                  description: Faker::Lorem.paragraph
                  );
   ) end

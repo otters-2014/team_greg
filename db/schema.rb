@@ -64,7 +64,6 @@ ActiveRecord::Schema.define(version: 20140403203757) do
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "cohort_id"
-    t.string   "location"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
