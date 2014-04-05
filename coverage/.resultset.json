@@ -78,9 +78,26 @@
         null,
         null
       ],
+      "/Users/katherineanderson/Desktop/team_greg/app/models/cohort.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/katherineanderson/Desktop/team_greg/app/models/conversation.rb": [
         1,
         1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katherineanderson/Desktop/team_greg/app/models/kbomb.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katherineanderson/Desktop/team_greg/app/models/location.rb": [
         1,
         1,
         null
@@ -92,6 +109,12 @@
         null
       ],
       "/Users/katherineanderson/Desktop/team_greg/app/models/user_conversation.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katherineanderson/Desktop/team_greg/app/models/user_kbomb.rb": [
         1,
         1,
         1,
@@ -110,20 +133,8 @@
         1,
         1,
         null
-      ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/user_kbomb.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/kbomb.rb": [
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1396669660
+    "timestamp": 1396674739
   }
 }
