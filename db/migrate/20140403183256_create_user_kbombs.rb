@@ -1,4 +1,4 @@
-class UserKbombs < ActiveRecord::Migration
+class CreateUserKbombs < ActiveRecord::Migration
   def change
     create_table :user_kbombs do |t|
       t.integer :user_id

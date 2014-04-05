@@ -8,6 +8,26 @@ feature 'on the user\'s profile page' do
     expect(page).to have_content user.last_name
   end
 
+  scenario 'a user can see their own kbombs' do
+    user = User.create(first_name: 'first', last_name: 'last', email: 'team@greg.com', password: 'password', password_confirmation: 'password')
+    user.kbombs << Kbomb.create(name: 'Rails', description: 'A ruby web framework!')
+    visit user_path(user)
+    expect(page).to have_content 'Rails'
+  end
+
+  scenario 'a user can see a link to remove a Kbomb' do
+    user = User.create(first_name: 'first', last_name: 'last', email: 'team@greg.com', password: 'password', password_confirmation: 'password')
+    user.kbombs << Kbomb.create(name: 'Rails', description: 'A ruby web framework!')
+    visit user_path(user)
+    expect(page).to have_content 'Remove Kbomb!'
+  end
+
+  scenario 'a user cannot see another user\'s add Kbomb button' do
+    user = User.create(first_name: 'first', last_name: 'last', email: 'team@greg.com', password: 'password', password_confirmation: 'password')
+    visit user_path(user)
+    expect(page).to_not have_content 'Add Kbomb!'
+  end
+
   scenario 'any user can see that user\'s kbombs' do
     kbomb1 = Kbomb.create(name: 'name 1')
     kbomb2 = Kbomb.create(name: 'name 2')
