@@ -1,5 +1,7 @@
 KBOMBS
 ===============
+[![Coverage Status](https://coveralls.io/repos/otters-2014/team_greg/badge.png?branch=coveralls)](https://coveralls.io/r/otters-2014/team_greg?branch=coveralls)
+
 ###A tool to ease the process of seeking help whether for pairing or mentoring. These are a skill name and a quick description. They can be created by admins, and users can pick from the list to add them to their profile.
 
 [trello](https://trello.com/b/bG6YH86Q)
