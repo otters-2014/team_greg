@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class MessagesController < ApplicationController
 
   def index
 
