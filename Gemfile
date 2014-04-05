@@ -52,6 +52,7 @@ group :development, :test do
   gem 'launchy'
   gem 'shoulda'
   gem 'faker'
+  gem 'coveralls', require: false
 end
 
-gem 'simplecov','~> 0.7.1' ,:require => false, :group => :test
+
