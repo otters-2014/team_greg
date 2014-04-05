@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140403203757) do
+ActiveRecord::Schema.define(version: 20140404190517) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(version: 20140403203757) do
   create_table "cohorts", force: true do |t|
     t.string   "name"
     t.integer  "location_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conversations", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,18 +41,17 @@ ActiveRecord::Schema.define(version: 20140403203757) do
     t.datetime "updated_at"
   end
 
-  create_table "locations", force: true do |t|
-    t.string   "name"
+  create_table "messages", force: true do |t|
+    t.integer  "sender_id"
+    t.integer  "conversation_id"
+    t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "messages", force: true do |t|
-    t.integer  "sender_id"
-    t.integer  "recipient_id"
-    t.string   "subject"
-    t.text     "body"
-    t.integer  "parent_id"
+  create_table "user_conversations", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "conversation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
