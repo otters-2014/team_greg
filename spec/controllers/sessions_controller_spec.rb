@@ -7,7 +7,7 @@ describe SessionsController do
     it 'does not login if invalid email' do
       User.should_receive(:find_by_email).with('not_team@greg.com').and_return(nil)
 
-      post(:create, login: {email: 'not_team@greg.com', password: 'password'})
+      post(:create, {email: 'not_team@greg.com', password: 'password'})
       expect(session[:user_id]).to be_nil
       expect(response).to render_template :new
     end
@@ -15,7 +15,7 @@ describe SessionsController do
     it 'does not login if password invalid' do
       User.should_receive(:find_by_email).with('team@greg.com').and_return(user)
 
-      post(:create, login: {email: 'team@greg.com', password: 'wrong password'})
+      post(:create, {email: 'team@greg.com', password: 'wrong password'})
       expect(session[:user_id]).to be_nil
       expect(response).to render_template :new
     end
@@ -23,7 +23,7 @@ describe SessionsController do
     it 'logs in a valid user' do
       User.should_receive(:find_by_email).with('team@greg.com').and_return(user)
 
-      post(:create, login: {email: 'team@greg.com', password: 'password'})
+      post(:create, {email: 'team@greg.com', password: 'password'})
       expect(session[:user_id]).to eq user.id
       expect(response).to redirect_to user_path(user)
     end
