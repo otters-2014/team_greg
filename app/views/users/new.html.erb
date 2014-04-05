@@ -1,9 +1,46 @@
-<%= form_for(@user) do |f| %>
-  <%= f.text_field :email %>
-  <%= f.text_field :first_name %>
-  <%= f.text_field :last_name %>
-  <%= f.text_field :password %>
-  <%= f.text_field :password_confirmation %>
-  <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
-  <%= f.submit 'signup' %>
+<h1>Sign Up</h1>
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <h2>Form is invalid</h2>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Cohort" %><br />
+    <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'signup' %>
+  </div>
 <% end %>
