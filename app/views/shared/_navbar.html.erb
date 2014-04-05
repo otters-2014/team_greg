@@ -1,0 +1,17 @@
+<nav class="row">
+  <h1 id="navbar-title">Mentoring App</h1>
+  <!-- Right Nav Section -->
+  <ul class="navbar-options right">
+    <% if current_user? %>
+    <li><%= current_user.email %></li>
+    <li><% link_to "Profile", show_user_path(current_user) %></li>
+    <li><% link_to "Sign Out", delete_session_path(current_user) %></li>
+  <% else %>
+    <%= form_for(:login, url: session_path) do |f| %>
+      <li><%= f.text_field :email, :placeholder => "Email" %></li>
+      <li><%= f.text_field :password, :placeholder => "Password" %></li>
+      <li><%= f.submit 'Login' %></li>
+    <% end %>
+    </ul>
+  <% end %>
+</nav>

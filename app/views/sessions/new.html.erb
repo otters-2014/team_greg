@@ -1,7 +1,13 @@
-<%= form_for(:login, url: session_path) do |f| %>
-  <%= f.text_field :email %>
-  <%= f.text_field :password %>
-  <%= f.submit 'login' %>
-<% end %>
-
-<%= link_to 'signup', new_user_path %>
+<div class="signup-form right">
+  <%= form_for(@user) do |f| %>
+  <ul>
+    <li><%= f.text_field :email, :placeholder => "Email Address" %></li>
+    <li><%= f.text_field :first_name, :placeholder => "First Name" %></li>
+    <li><%= f.text_field :last_name, :placeholder => "Last Name" %></li>
+    <li><%= f.text_field :password, :placeholder => "Password" %></li>
+    <li><%= f.text_field :password_confirmation, :placeholder => "Confirm Password" %></li>
+    <li><%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%></li>
+    <li><%= f.submit 'Register' %></li>
+  </ul>
+  <% end %>
+</div>

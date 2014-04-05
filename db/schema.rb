@@ -35,12 +35,6 @@ ActiveRecord::Schema.define(version: 20140404190517) do
     t.datetime "updated_at"
   end
 
-  create_table "locations", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "messages", force: true do |t|
     t.integer  "sender_id"
     t.integer  "conversation_id"
