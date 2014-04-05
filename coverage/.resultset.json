@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/katherineanderson/Desktop/team_greg/app/helpers/application_helper.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/controllers/sessions_controller.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
@@ -29,21 +29,21 @@
         null,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/controllers/application_controller.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/controllers/users_controller.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/controllers/users_controller.rb": [
         1,
         1,
         0,
         null,
         null,
         1,
-        5,
+        8,
         null,
         null,
         1,
@@ -78,49 +78,49 @@
         null,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/cohort.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/cohort.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/conversation.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/conversation.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/kbomb.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/kbomb.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/location.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/location.rb": [
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/message.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/user_conversation.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/message.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/user_kbomb.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/user_conversation.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/katherineanderson/Desktop/team_greg/app/models/user.rb": [
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/user_kbomb.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/knowledge_bombs/app/models/user.rb": [
         1,
         1,
         null,
@@ -135,6 +135,6 @@
         null
       ]
     },
-    "timestamp": 1396674739
+    "timestamp": 1396739230
   }
 }
