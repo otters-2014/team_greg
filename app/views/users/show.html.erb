@@ -8,18 +8,34 @@
 <%end%>
 
 
+
+
+
+<div class='kbomb'>
+<label>
+	Kbombs
+</label>
+<div>
 <ul>
 <% @user.kbombs.each do |kbomb| %>
   <li>
     <%= link_to "#{kbomb.name}", kbomb_path(kbomb.id) %>
-    <%= link_to 'Remove Kbomb!', "/users/#{@user.id}/kbombs/#{kbomb.id}/delete"%>
+    <%= link_to 'x', "/users/#{@user.id}/kbombs/#{kbomb.id}/delete",class: 'remove'%>
   </li>
 <% end %>
 </ul>
-
+</div>
 <% if (@user.id == session[:user_id]) %>
-  <%= link_to('Add Kbomb!', add_kbombs_path)%>
+  <%= link_to 'Add', add_kbombs_path,class: 'add'%>
 <% end %>
+</div>
+
+
+
+
+
+
+
 
 <%= @user.description %>
 <div>

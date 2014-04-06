@@ -11,3 +11,133 @@
  *= require_self
  *= require_tree .
  */
+html,body {
+	height:100%;
+	width: 100%;
+	background-color: #666;
+}
+h1{
+	text-align: center;
+	color:white;
+}
+.new_user {
+	display: block;
+	/*border: 2px solid #333;*/
+	width:240px;
+	margin: auto;
+	background-color:#333;
+    padding:24px;
+    box-shadow: 4px 0 8px black;
+}
+
+.new_user select{
+	display:block;
+	width:244px;
+	margin:0 0 10px;
+	padding:0px;
+}
+.new_user input{
+	display:block;
+	width:224px;
+	margin:0 auto 10px;
+	padding:8px;
+}
+.new_user .submit{
+	display:block;
+	width:244px;
+	margin:0 auto 10px;
+	padding:8px;
+}
+
+.new_user button{
+	display:inline-block;
+}
+
+
+
+
+.kbomb{
+	border:2px solid black;
+	width:120px;
+	background-color: #333;
+	text-align: center;
+	font-color:green;
+	border-radius:6px;
+	box-shadow: 4px 0 8px black;
+}
+
+.kbomb div{
+	border:2px solid black;
+	width:112px;
+	margin:auto;
+	font-color:white;
+	background-color:black;
+	border-radius:4px;
+	box-shadow: inset 4px 0 8px white;
+
+}
+
+.kbomb ul{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	background-color:black;
+}
+
+.kbomb li{
+	text-align: center;
+	margin:1px 2px;
+	border-left:2px outset black;
+	border-right:2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color:red;
+	border-radius: 4px;
+	padding:4px 0;
+	box-shadow:inset 0px 0px 10px 2px #000000;
+}
+.kbomb a{
+	color:black;
+	text-decoration: none;
+}
+
+
+.kbomb label{
+	text-align: center;
+	width:120px;
+	display:block;
+	color:white;	
+}
+
+.kbomb .js{
+	background-color:#2ca4f4;
+	box-shadow:inset 0px 0px 10px 2px #000000;
+}
+.kbomb .ruby{
+	background-color:red;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
+.kbomb .other{
+	background-color: gold;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
+.kbomb .css{
+	background-color:#30d94c;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
+
+.remove {
+	display:inline-block;
+	/*height:10px;*/
+	/*width:10px;*/
+	text-align: right;
+	border-radius:4px;
+	/*border:1px solid black;*/
+	padding:4px;
+/*	background-color: white;*/
+float:right;
+}
+
+.kbomb .add{
+	color:white;
+}
