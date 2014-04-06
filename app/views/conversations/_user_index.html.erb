@@ -5,9 +5,11 @@
 
     <p>You have no conversations :(</p>
   <% else %>
+    <ul>
     <% conversations.each do |conversation| %>
       <% recipient = (conversation.users.select{|u| u != current_user}).pop.full_name %>
-      <%= link_to "your conversation with #{recipient}", user_conversation_path(current_user, conversation) %>
+      <li><%= link_to "your conversation with #{recipient}", user_conversation_path(current_user, conversation) %></li>
     <% end %>
+    </ul>
   <% end %>
 </div>
