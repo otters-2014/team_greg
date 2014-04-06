@@ -1,6 +1,6 @@
 class ConversationsController < ApplicationController
   def index
-    @conversations = Conversations.all
+    @conversations = Conversation.all
   end
 
   def show
