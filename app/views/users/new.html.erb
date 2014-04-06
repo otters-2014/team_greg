@@ -11,39 +11,32 @@
     </ul>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name %>
-  </div>
 
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name %>
-  </div>
+	<%= form_for(@user) do |f| %>
+	  <%= f.text_field :email, :placeholder => "email"%>
+	  <%= f.text_field :first_name, :placeholder => "first name"%>
+	  <%= f.text_field :last_name, :placeholder => "last name"%>
+	  <%= f.password_field :password, :placeholder => "password"%>
+	  <%= f.password_field :password_confirmation, :placeholder => "confirm password"%>
+	  <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
+	  <%= f.submit 'signup',:class =>'submit' %>
+	<% end %>
+<%end%>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-
-  <div class="field">
-    <%= f.label "Cohort" %><br />
-    <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
-  </div>
-
-  <div class="actions">
-    <%= f.submit 'signup' %>
-  </div>
+<div class='kbomb'>
+<label>
+	Kbombs
+</label>
+<div>
+<ul>
+	<li class='ruby'>OO Ruby</li>
+	<li class='css'>CSS</li>
+	<li class='js'>javascript</li>
+	<li class='other'>Git</li>
+</ul>
+</div>
+</div>
 
 
 
@@ -51,14 +44,3 @@
 
 
 
-
-
-<%= form_for(@user) do |f| %>
-  <%= f.text_field :email, :placeholder => "email"%>
-  <%= f.text_field :first_name, :placeholder => "first name"%>
-  <%= f.text_field :last_name, :placeholder => "last name"%>
-  <%= f.text_field :password, :placeholder => "password"%>
-  <%= f.text_field :password_confirmation, :placeholder => "confirm password"%>
-  <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
-  <%= f.submit 'signup',:class =>'submit' %>
-<% end %>

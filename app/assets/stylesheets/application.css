@@ -48,3 +48,70 @@ html,body {
 .new_user button{
 	display:inline-block;
 }
+
+
+
+
+.kbomb{
+	border:2px solid black;
+	width:120px;
+	background-color: #333;
+	text-align: center;
+	font-color:green;
+	border-radius:6px;
+	box-shadow: 4px 0 8px black;
+}
+
+.kbomb div{
+	border:2px solid black;
+	width:112px;
+	margin:auto;
+	font-color:white;
+	background-color:black;
+	border-radius:4px;
+	box-shadow: inset 4px 0 8px white;
+
+}
+
+.kbomb ul{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	background-color:black;
+}
+
+.kbomb li{
+	text-align: center;
+	margin:1px 2px;
+	border-left:2px outset black;
+	border-right:2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color:#666;
+	border-radius: 4px;
+	padding:4px 0;
+}
+
+.kbomb label{
+	text-align: center;
+	width:120px;
+	display:block;
+	color:white;	
+}
+
+.kbomb .js{
+	background-color:#2ca4f4;
+	box-shadow:inset 0px 0px 10px 2px #000000;
+}
+.kbomb .ruby{
+	background-color:red;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
+.kbomb .other{
+	background-color: gold;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
+.kbomb .css{
+	background-color:#30d94c;
+	box-shadow:inset 0 0 10px 2px #000000;
+}
