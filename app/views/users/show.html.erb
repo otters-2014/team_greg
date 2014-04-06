@@ -22,3 +22,10 @@
 <% end %>
 
 <%= @user.description %>
+<div>
+<% if @user == current_user %>
+  <%= render '/conversations/user_index' %>
+<% else %>
+  <%= link_to "Have a conversation with #{@user.first_name}", user_conversations_path(@user), method: :create %>
+<% end %>
+</div>

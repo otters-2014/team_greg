@@ -17,6 +17,22 @@
                  );
   ) end
 
+User.create(first_name: 'Tony',
+            last_name: 'Ta',
+            password: 'password',
+            password_confirmation: 'password',
+            email: 'tony@gmail.com',
+            cohort_id: 1,
+            description: Faker::Lorem.paragraph)
+User.create(first_name: 'Greg',
+            last_name: 'Sucks',
+            password: 'password',
+            password_confirmation: 'password',
+            email: 'greg@sucks.com',
+            cohort_id: 1,
+            description: Faker::Lorem.paragraph)
+
+
 Kbomb.create(name: 'Ruby', description: Faker::Lorem.paragraph)
 Kbomb.create(name: 'Rails', description: Faker::Lorem.paragraph)
 Kbomb.create(name: 'Sinatra', description: Faker::Lorem.paragraph)

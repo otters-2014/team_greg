@@ -1,0 +1,17 @@
+<h1>
+  Your Conversation with
+  <%= @conversation.users.select{|u| u != current_user}.map(&:full_name).join(' & ') %>
+</h1>
+<div data-user-id='<%= current_user.id %>' class='messages'>
+  <div class='message-view message-template'>
+    <h4 class='message-header'>Message Header</h4>
+    <p class='message-body'>Message Body</p>
+  </div>
+</div>
+
+
+<%= form_for [@conversation, Message.new] do |f| %>
+  <%= f.text_area :text %><br>
+  <%= f.submit 'Reply' %>
+<% end %>
+<%= javascript_include_tag :conversation %>
