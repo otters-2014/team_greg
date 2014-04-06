@@ -19,7 +19,7 @@ feature 'on the user\'s profile page' do
     user = User.create(first_name: 'first', last_name: 'last', email: 'team@greg.com', password: 'password', password_confirmation: 'password')
     user.kbombs << Kbomb.create(name: 'Rails', description: 'A ruby web framework!')
     visit user_path(user)
-    expect(page).to have_content 'Remove Kbomb!'
+    expect(page).to have_content 'x'
   end
 
   scenario 'a user cannot see another user\'s add Kbomb button' do
