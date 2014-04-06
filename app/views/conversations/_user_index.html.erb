@@ -1,0 +1,13 @@
+<div>
+  <h2>Your Conversations</h2>
+  <% conversations = current_user.conversations %>
+  <% if conversations.empty? %>
+
+    <p>You have no conversations :(</p>
+  <% else %>
+    <% conversations.each do |conversation| %>
+      <% recipient = (conversation.users.select{|u| u != current_user}).pop.full_name %>
+      <%= link_to "your conversation with #{recipient}", user_conversation_path(current_user, conversation) %>
+    <% end %>
+  <% end %>
+</div>

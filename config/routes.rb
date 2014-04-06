@@ -4,9 +4,13 @@ KnowledgeBombs::Application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
   root 'sessions#new'
-  # post '/sessions' => 'sessions#create', as: :session #=> session_path
-  # delete '/logout' =>'sessions#destroy', as: :logout
+
   resources :sessions
-  resources :users
+
+  resources :users do
+    resources :conversations, only: :show
+  end
+
+  post '/conversations/:conversation_id/messages' => 'messages#create', as: :conversation_messages
 
 end

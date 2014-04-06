@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
   has_many :messages, foreign_key: "sender_id"
   has_many :user_conversations
   has_many :conversations, through: :user_conversations
+
+  def full_name
+    "#{self.first_name} #{self.last_name}"
+  end
 end
