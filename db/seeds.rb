@@ -1,37 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+users = File.open('./db/user_info.txt', 'r').read.split("\n")
 
-100.times do(
-    User.create(first_name: Faker::Name.first_name,
-                 last_name: Faker::Name.last_name,
-                 password: 'password',
-                 password_confirmation: 'password',
-                 email: Faker::Internet.email,
-                 cohort_id: rand(1..5),
-                 description: Faker::Lorem.paragraph
-                 );
-  ) end
-
-User.create(first_name: 'Tony',
-            last_name: 'Ta',
-            password: 'password',
-            password_confirmation: 'password',
-            email: 'tony@gmail.com',
-            cohort_id: 1,
-            description: Faker::Lorem.paragraph)
-User.create(first_name: 'Greg',
-            last_name: 'Sucks',
-            password: 'password',
-            password_confirmation: 'password',
-            email: 'greg@sucks.com',
-            cohort_id: 1,
-            description: Faker::Lorem.paragraph)
-
+users.each do |user_info|
+  user_params = JSON.parse(user_info).merge({password: 'password', password_confirmation: 'password'})
+  User.create(user_params)
+end
 
 Kbomb.create(name: 'Ruby', description: Faker::Lorem.paragraph)
 Kbomb.create(name: 'Rails', description: Faker::Lorem.paragraph)

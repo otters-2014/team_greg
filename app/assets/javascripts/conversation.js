@@ -13,7 +13,16 @@ function updateMessages(){
     $('.messages').html( getMessageNode().addClass('message-template') );
     $.each(messagesArray, function(i, messageInfo){
       var msg = getMessageNode();
-      var sender = (userId === messageInfo.sender_id) ? 'You' : messageInfo.sender_name;
+      var sender;
+      if (userId === messageInfo.sender_id) {
+        sender = 'You';
+        msg.addClass('message-sent');
+      } else {
+        sender = messageInfo.sender_name;
+        msg.addClass('message-received');
+      }
+
+
       var header = sender + " said this " + messageInfo.time_ago + " ago."
       var body = messageInfo.html_body;
       msg.find('.message-header').html(header);

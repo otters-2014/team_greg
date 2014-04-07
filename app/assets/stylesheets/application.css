@@ -14,7 +14,7 @@
 html,body {
 	height:100%;
 	width: 100%;
-	background-color: #666;
+	background-color: #64ABD0;
 }
 h1{
 	text-align: center;
@@ -106,7 +106,7 @@ h1{
 	text-align: center;
 	width:120px;
 	display:block;
-	color:white;	
+	color:white;
 }
 
 .kbomb .js{
@@ -140,4 +140,28 @@ float:right;
 
 .kbomb .add{
 	color:white;
+}
+
+.message-template {
+	display: none;
+}
+
+.messages-container {
+	width: 600px;
+	margin: 20px auto;
+	padding: 40px;
+}
+
+.message-view {
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.message-sent {
+	background-color: #38E05D;
+}
+
+.message-received {
+	background-color: #FFA840;
 }
