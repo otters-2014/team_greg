@@ -17,9 +17,9 @@ html,body {
 	background-color:#086ca2;
 	font-family: sans-serif;
 }
-h1{
+h1,h2{
 	text-align: center;
-	color:white;
+	color:#333;
 }
 
 
@@ -38,6 +38,7 @@ h1{
     left: 0;
     width: 100%;
     height: 64px;
+    border-bottom: 2px solid black;
 }
  
  
@@ -72,19 +73,6 @@ h1{
     line-height: 64px;
 }
  
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
 .new_user {
 	display: block;
 	/*border: 2px solid #333;*/
@@ -93,6 +81,7 @@ h1{
 	background-color:#333;
     padding:24px;
     box-shadow: 4px 0 8px black;
+    color:white;
 }
 
 .new_user select{
@@ -118,15 +107,19 @@ h1{
 	display:inline-block;
 }
 
-
+.new_user a{
+	color:white;
+	display:inline-block;
+	float:right;
+}
 
 
 .kbomb{
+	display:inline-block;
 	border:2px solid black;
 	width:120px;
 	background-color: #333;
 	text-align: center;
-	font-color:green;
 	border-radius:6px;
 	box-shadow: 4px 0 8px black;
 }
@@ -135,7 +128,6 @@ h1{
 	border:2px solid black;
 	width:112px;
 	margin:auto;
-	font-color:white;
 	background-color:black;
 	border-radius:4px;
 	box-shadow: inset 4px 0 8px white;
@@ -225,10 +217,12 @@ float:right;
 
 .message-sent {
 	background-color: #38E05D;
+	box-shadow:2px 0 8px black;
 }
 
 .message-received {
 	background-color: #FFA840;
+	box-shadow:2px 0 8px black;
 }
 
 .message-header {
@@ -240,3 +234,73 @@ float:right;
 	margin-bottom: 8px;
 	font-size: 1.2em;
 }
+
+
+
+.user{
+	color:white;
+	display:inline-block;
+	border:2px solid black;
+	background-color: #333;
+	border-radius:6px;
+	box-shadow: 4px 0 8px black;
+
+}
+
+.user img{
+	border:2px solid black;
+	border-radius:6px;
+	box-shadow:2px 0 8px black;
+	float:left;
+
+}
+.user div{
+	display:inline-block;
+}
+
+.user div div{
+	display:block;
+}
+
+.user p{
+	display:inline-block;
+	width:100%;
+}
+
+
+.conversation{
+	list-style-type: none;
+	background-color:#FFA840;
+	box-shadow:2px 0 8px black;
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+.conversation-container{
+	width: 400px;
+	margin: 20px auto;
+	padding: 40px;
+
+}
+
+.conversation a{
+	text-decoration: none;
+	color:black;
+}
+
+.landing {
+	font-size: 32px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+

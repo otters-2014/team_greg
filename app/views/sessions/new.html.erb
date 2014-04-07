@@ -1,19 +1,26 @@
 <h1>Log In</h1>
+<div class='landing'>
+Want to become a better developer? <br>
+Call in the artillery.
+</div>
+<div class='new_user'>
 
-<%= form_tag sessions_path do |f| %>
-  <div class="field">
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
-  </div>
 
-  <div class="field">
-    <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </div>
+  <%= form_tag sessions_path do |f| %>
+    <div class="field">
+      <%= label_tag :email %><br />
+      <%= text_field_tag :email, params[:email] %>
+    </div>
 
-  <div class="actions">
-    <%= submit_tag 'login' %>
-  </div>
-<% end %>
+    <div class="field">
+      <%= label_tag :password %><br />
+      <%= password_field_tag :password %>
+    </div>
 
-<%=link_to 'Sign Up', signup_path %> 
+    <div class="actions">
+      <%= submit_tag 'login' %>
+    </div>
+  <% end %>
+
+  <%=link_to 'Sign Up', signup_path ,class: 'link'%> 
+</div>
