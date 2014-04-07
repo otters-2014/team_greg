@@ -1,6 +1,18 @@
-<% @kbombs.each do |kbomb| %>
-  Add:
-  <%= link_to("#{kbomb.name}", user_kbombs_path(@user, :kbomb_id => kbomb.id), method: :post)%>
-  Description: <%= kbomb.description %>
-  <br><br>
+<% if @user %>
+
+  <% @kbombs.each do |kbomb| %>
+    Add:
+    <%= link_to("#{kbomb.name}", user_kbombs_path(@user, :kbomb_id => kbomb.id), method: :post)%>
+    Description: <%= kbomb.description %>
+    <br><br>
+  <% end %>
+
+<% else %>
+
+  <% @kbombs.each do |kbomb| %>
+    <%= link_to kbomb.name, kbomb_path(kbomb)%>
+    Description: <%= kbomb.description %>
+    <br><br>
+  <% end %>
+
 <% end %>
