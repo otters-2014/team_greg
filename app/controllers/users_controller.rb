@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    p user_params
+    p params
     @user = User.new(user_params,)
     if @user.save
       session[:user_id] = @user.id

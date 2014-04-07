@@ -20,7 +20,7 @@
 	  <%= f.text_field :last_name, :placeholder => "last name"%>
 	  <%= f.password_field :password, :placeholder => "password"%>
 	  <%= f.password_field :password_confirmation, :placeholder => "confirm password"%>
-	  <%= f.select(:user,:cohort_id, Cohort.to_a)%>
+	  <%= select(:user, :cohort_id, [['Otters', 1], ['Grasshoppers', 2], ['Dragonflies', 3]])%>
 	  <%= f.submit 'signup',:class =>'submit' %>
 	<% end %>
 <%end%>
