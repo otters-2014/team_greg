@@ -1,3 +1,5 @@
+require 'digest/md5'
+
 class User < ActiveRecord::Base
   has_secure_password
 
@@ -16,5 +18,9 @@ class User < ActiveRecord::Base
 
   def full_name
     "#{self.first_name} #{self.last_name}"
+  end
+
+  def email_hash
+    Digest::MD5.hexdigest(self.email.strip.downcase)
   end
 end
