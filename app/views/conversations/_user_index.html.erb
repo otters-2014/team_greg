@@ -1,15 +1,22 @@
 <div>
   <h2>Your Conversations</h2>
   <% conversations = current_user.conversations %>
-  <% if conversations.empty? %>
+  <div class='conversation-container'>
+    <% if conversations.empty? %>
 
-    <p>You have no conversations :(</p>
-  <% else %>
-    <ul>
-    <% conversations.each do |conversation| %>
-      <% recipient = (conversation.users.select{|u| u != current_user}).pop.full_name %>
-      <li><%= link_to "your conversation with #{recipient}", user_conversation_path(current_user, conversation) %></li>
+      <p class='conversation'>You have no conversations :(</p>
+    <% else %>
+      <ul>
+      <% conversations.each do |conversation| %>
+        <% recipient = (conversation.users.select{|u| u != current_user}).pop.full_name %>
+        <li class='conversation'><%= link_to "#{recipient}", user_conversation_path(current_user, conversation) %></li>
+      <% end %>
+      </ul>
     <% end %>
-    </ul>
-  <% end %>
+  </div>
 </div>
+
+
+
+
+  

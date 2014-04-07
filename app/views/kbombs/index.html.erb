@@ -9,10 +9,12 @@
 
 <% else %>
 
+<div class='kbomb'>
+<ul class='kbomb'>
   <% @kbombs.each do |kbomb| %>
-    <%= link_to kbomb.name, kbomb_path(kbomb)%>
-    Description: <%= kbomb.description %>
+    <li><%= link_to kbomb.name, kbomb_path(kbomb)%></li>
     <br><br>
   <% end %>
-
+</ul>
+</div>
 <% end %>

@@ -15,7 +15,7 @@ feature 'on the user\'s profile page' do
     expect(page).to have_content 'Rails'
   end
 
-  scenario 'a user can see a link to remove a Kbomb' do
+  xscenario 'a user can see a link to remove a Kbomb' do
     user = User.create(first_name: 'first', last_name: 'last', email: 'team@greg.com', password: 'password', password_confirmation: 'password')
     user.kbombs << Kbomb.create(name: 'Rails', description: 'A ruby web framework!')
     visit user_path(user)

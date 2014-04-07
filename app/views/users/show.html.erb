@@ -1,37 +1,46 @@
+<div class='user'>
+	<img src='http://www.gravatar.com/avatar/<%=@user.email_hash%>'>
+	<div>
+		<div>
+			<%= @user.first_name %>
+			<%= @user.last_name %>
+		</div>
+		<%if @user.cohort%>
+			<div>
+				<%= @user.cohort.name %>
+			</div>
+			<div>
+				<%= @user.cohort.location.name %>
+			</div>
+		<%end%>
+	</div>
 
-<img src='http://www.gravatar.com/avatar/<%=@user.email_hash%>'>
-
-<%= @user.first_name %>
-<%= @user.last_name %>
-
-<% if @user.cohort %>
-<%= @user.cohort.name %>
-
-<%= @user.cohort.location.name %>
-<%end%>
 
 
 
 
-
-<div class='kbomb'>
-<label>
-	Kbombs
-</label>
-<div>
-<ul>
-<% @user.kbombs.each do |kbomb| %>
-  <li>
-    <%= link_to "#{kbomb.name}", kbomb_path(kbomb.id) %>
-    <%= link_to 'x', "/users/#{@user.id}/kbombs/#{kbomb.id}/delete",class: 'remove'%>
-  </li>
-<% end %>
-</ul>
+	<div class='kbomb'>
+	<label>
+		Kbombs
+	</label>
+	<div>
+	<ul>
+	<% @user.kbombs.each do |kbomb| %>
+	  <li>
+	    <%= link_to "#{kbomb.name}", kbomb_path(kbomb.id) %>
+	    <%if (@user.id == session[:user_id])%>
+	    	<%= link_to 'x', "/users/#{@user.id}/kbombs/#{kbomb.id}/delete",class: 'remove'%>
+	  	<%end%>
+	  </li>
+	<% end %>
+	</ul>
+	</div>
+	<% if (@user.id == session[:user_id]) %>
+	  <%= link_to 'Add', add_kbombs_path,class: 'add'%>
+	<% end %>
+	</div>
+	<p><%= @user.description %></p>
 </div>
-<% if (@user.id == session[:user_id]) %>
-  <%= link_to 'Add', add_kbombs_path,class: 'add'%>
-<% end %>
-</div>
 
 
 
@@ -40,11 +49,10 @@
 
 
 
-<%= @user.description %>
 <div>
 <% if @user == current_user %>
   <%= render '/conversations/user_index' %>
 <% else %>
-  <%= link_to "Have a conversation with #{@user.first_name}", user_conversations_path(@user), method: :create %>
+  <%= link_to "Have a conversation with #{@user.first_name}", user_conversations_path(@user), method: :create,class: 'conversation' %>
 <% end %>
 </div>
