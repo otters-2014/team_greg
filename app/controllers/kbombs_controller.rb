@@ -2,7 +2,7 @@ class KbombsController < ApplicationController
 
   def index
     @kbombs = Kbomb.all
-    @user = User.find(params[:id])
+    @user = User.find_by_id(params[:id])
   end
 
   def show
