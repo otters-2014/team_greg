@@ -1,0 +1,61 @@
+{"first_name": "Adam", "last_name": "Willis", "email": "adam.willis@woodhouse.com", "cohort_id": 1, "description": "Fresh out of school for frontend development, into bootcamp for backend!"}
+{"first_name": "Calder", "last_name": "Wishne", "email": "calderw@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Cameron", "last_name": "Johnson", "email": "camjohnson0302@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Christopher", "last_name": "Scherer", "email": "chrisscherer90@gmail.com", "cohort_id": 1, "description": "Went to the Ohio State University for a couple years before finding DBC and decided to stop wasting my money and time. I'm excited to get started with my career . In my free time i'm a musician, and play drums in a local band. I'm also a huge gamer! Video games, board games, pen and papers, just about anything."}
+{"first_name": "Dan", "last_name": "Benson", "email": "dan.s.benson@gmail.com", "cohort_id": 1, "description": "Call me Dan, I've worked for Chase and Bank of America and recently as a junior web designer.   I'm pretty fresh out of college and am looking to get out of the traditional mold."}
+{"first_name": "Dan", "last_name": "Brown", "email": "dbrown@occameducation.com", "cohort_id": 1, "description": "One day at a time.I like to walk roads less traveled, but I have a fair amount of responsibility (my brother and I founded and run a small educational consulting company) that keeps me being more conventional than spontaneous for most months of the year.I'm a non-traditional career educator. I've tutored since high school, taught ESL in Syria and then New York, where I also taught SAT's. I thought I would go on to become a university professor in Islamic Studies, but I just really don't like writing. Editing other people's work = totally fine, and I'm good at it. Writing original stuff (especially research) = still a question mark.After Dev, I'll be starting a Master's in Applied Positive Psychology at the University of East London. I've made a big part of my life's purpose helping others, and I'm hoping that Dev will enable me to build ... something ... that will make the world a little bit better.Looking forward to meeting you all."}
+{"first_name": "Devin", "last_name": "Wieland", "email": "devinwieland@gmail.com", "cohort_id": 1, "description": "Hi there. My name is Devin. I'm married to Emily and we have a 10-month-old son named Henrik. My professional background is in marketing with an emphasis on writing. I currently work for Into The Wild Marketing (intothewildmarketing.com), a digital advertising agency partner here in Fort Wayne. Took an interest in web development about 6 months ago, and it's taken over ever since... Other interests include reading, writing, cooking, playing drums, playing hockey, and having Emily teach me how to travel."}
+{"first_name": "Greg", "last_name": "Santikian", "email": "gsantikian@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Ian", "last_name": "Bates", "email": "38bates@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "John", "last_name": "Norton", "email": "john.j.norton@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Kelsey", "last_name": "Ando", "email": "kma3a@virginia.edu", "cohort_id": 1, "description": ""}
+{"first_name": "Kenny", "last_name": "Luk", "email": "secretlyclever@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Marco", "last_name": "Morales", "email": "marco.bbcm@gmail.com", "cohort_id": 1, "description": "I'm a Chicago native, living in Portland, OR, married to Christina. I shipped her off to South America to learn Spanish while I learn to code. I'm a Sr. Art Director with a technical background in print production. I attended Columbia College for Design/Advertising but my degree is in Culinary Arts from Le Cordon Bleu where I met my wife. I like building anything: layouts, campaigns, recipes, programs, lego. I'm pretty loose in life, but methodical in my work. So if I start to get too serious, remind me to lighten up. Also worthy of note: I successfully ate the Hot-as-a-Motha from Heaven on Seven and lived to regret it."}
+{"first_name": "Pablo", "last_name": "Vergel", "email": "pvergel@themortercompany.com", "cohort_id": 1, "description": "."}
+{"first_name": "Sarah", "last_name": "Sprague", "email": "sprasarah@gmail.com", "cohort_id": 1, "description": ""}
+{"first_name": "Tony", "last_name": "Ta", "email": "tonyta.tt@gmail.com", "cohort_id": 1, "description": "I'm Tony. I hail from the shiny City by the Bay where I currently work as an analytical chemist and quality manager in a small testing lab doing work for FDA. Fun facts: I've bribed police in three different countries. I like riding things with two wheels. I make beer, bread, and jam. The Last of Us made me cry. And I can't wait to meet the rest of you!"}
+{"first_name": "Abdullah", "last_name": "Haikal", "email": "alanhaikal@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Amelia", "last_name": "Padua", "email": "amelia.padua@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Christoph", "last_name": "Wong", "email": "wong.christoph@gmail.com", "cohort_id": 2, "description": "I love to learn more in music, rock-climbing, and of course code."}
+{"first_name": "Dinesh", "last_name": "Kaushal", "email": "dkaushal99352@yahoo.com", "cohort_id": 2, "description": "Former mainframe programmer , bartender, and day trader. Employed by Amazon.com as an escalation specialist. Desperately trying to retain whatever semblance of sanity he still has."}
+{"first_name": "Gregory", "last_name": "Heaphy", "email": "heaphyg@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Harry", "last_name": "Wang", "email": "hgw2101@gmail.com", "cohort_id": 2, "description": "Currently working as a financial analyst at Capital One. Would like to start a career as a web/app developer."}
+{"first_name": "Jacob", "last_name": "Nations", "email": "jnations1214@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Jaime", "last_name": "Schubert", "email": "jkschub@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Jarrod", "last_name": "Scott", "email": "jlscott2005@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Javad", "last_name": "Afshar", "email": "mjafshar@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Jay", "last_name": "Bobo", "email": "jbobo@goodproduce.net", "cohort_id": 2, "description": "I'm me :)"}
+{"first_name": "Jonathon", "last_name": "Nordquist", "email": "jonathon.nordquist@gmail.com", "cohort_id": 2, "description": "Graduated Eastern Illinois University with a degree in Botanical Science.Have worked in biotechnology, mental health, cellular telecom, retail, food service and medical positions.Interests are extremely varied.Engaged to an amazing girl.Have two cats."}
+{"first_name": "Michael", "last_name": "Jr.", "email": "michaelleejr627@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Michael", "last_name": "Main", "email": "michaelanthonymain@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Osagie", "last_name": "Omoruyi", "email": "osagieo@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Rohan", "last_name": "Mathur", "email": "rmathur101@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Ron", "last_name": "Gierlach", "email": "rongierlach@yahoo.com", "cohort_id": 2, "description": ""}
+{"first_name": "Ryan", "last_name": "Verhey", "email": "ryan90v@gmail.com", "cohort_id": 2, "description": ""}
+{"first_name": "Andrew", "last_name": "Larson", "email": "andqwoo@gmail.com", "cohort_id": 3, "description": "Love to cook, eat and perfect both.  Playing games is a huge past-time from computer, cards, board, classics, and group games."}
+{"first_name": "Andrew", "last_name": "Younge", "email": "atyounge@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Caroline", "last_name": "Artz", "email": "ceartz@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Dan", "last_name": "Armstrong", "email": "danarmstrong.aec@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Elizabeth", "last_name": "Cruz", "email": "elizabeth.j.cruz@gmail.com", "cohort_id": 3, "description": "I am the owner of an over active imagination. I have far too many hobbies to count and keep track of; just consider me a maker."}
+{"first_name": "Elizabeth", "last_name": "Kaplan", "email": "lkap44@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Erik", "last_name": "Olsen", "email": "erik.s.olsen@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Fabi", "last_name": "Castillo", "email": "rorou192@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "George", "last_name": "Amolsch", "email": "gamolsch@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Guido", "last_name": "Medina", "email": "yoguido77@yahoo.com", "cohort_id": 3, "description": ""}
+{"first_name": "Jason", "last_name": "Chodera", "email": "jason.chodera@outlook.com", "cohort_id": 3, "description": ""}
+{"first_name": "Justin", "last_name": "Stewart", "email": "stewart.justin.m@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Kevin", "last_name": "Kanhirun", "email": "kkanhirun@gmail.com", "cohort_id": 3, "description": "My last experiences with coding falls back to a really, really high-level programming language - if you even dare call it that - called RPGmaker2000 that I played with a lot when I was 12. There, I learned several bad habits in coding that I am now resolving with great frustration."}
+{"first_name": "Lars", "last_name": "Berg", "email": "larsgbr@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Matthew", "last_name": "Berns", "email": "matthewl.berns@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Matthew", "last_name": "Didier", "email": "mdidier9@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Michael", "last_name": "Hamel", "email": "hamel.michael.p@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Milan", "last_name": "Grubnic", "email": "milan.grubnic@gmail.com", "cohort_id": 3, "description": "I'm new to the developer world and looking to reinvent myself. Milan 2.0"}
+{"first_name": "Mohammad", "last_name": "Abdeljalil", "email": "mabdeljalil@uchicago.edu", "cohort_id": 3, "description": ""}
+{"first_name": "Nate", "last_name": "Kandler", "email": "natekandler@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Nicholas", "last_name": "Eich", "email": "neich0888@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Oliver", "last_name": "Treadwell", "email": "oliver.treadwell@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Paige", "last_name": "Crum", "email": "paigecrum@gmail.com", "cohort_id": 3, "description": ""}
+{"first_name": "Robb", "last_name": "HyungMin", "email": "tvorik.robb@gmail.com", "cohort_id": 3, "description": "I like green smoothies and tacos.I don't always eat fried chicken but when I do, I prefer BonChon"}
+{"first_name": "SANTRECE", "last_name": "ROSS", "email": "mssross2@yahoo.com", "cohort_id": 3, "description": ""}
+{"first_name": "Tam", "last_name": "Dang", "email": "teedang19@yahoo.com", "cohort_id": 3, "description": "Read, write, cook, stretch, kiss my animals."}
+{"first_name": "syed", "last_name": "jafri", "email": "raza.jafri.sy@gmail.com", "cohort_id": 3, "description": "Hi! My name is raza. I enjoy exploring the planet, its people, and my consciousness. I love learning new things and this universe fascinates me (:"}
