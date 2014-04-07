@@ -1,5 +1,10 @@
 users = File.open('./db/user_info.txt', 'r').read.split("\n")
 
+Location.create(name: 'Chicago')
+Cohort.create(name: "Otters",location_id:1)
+Cohort.create(name: "Grasshoppers",location_id:1)
+Cohort.create(name: "Dragonflies",location_id:1)
+
 users.each do |user_info|
   user_params = JSON.parse(user_info).merge({password: 'password', password_confirmation: 'password'})
   User.create(user_params)
@@ -21,3 +26,4 @@ Kbomb.create(name: 'CSS', description: Faker::Lorem.paragraph)
 User.all.each do |user|
   user.kbombs << (Kbomb.all.sample(rand(3..5)))
 end
+

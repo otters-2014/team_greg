@@ -6,6 +6,26 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
+
+
+  <div class="top-nav">
+    <div class="container">
+      <h1>KnowledgeBombs</h1>
+      <ul class="nav">
+        <%if current_user%>
+        <li><%=link_to "Home", user_path(current_user)%></li>
+        <%else%>
+        <li><%=link_to "Home", root_path%></li>
+        <%end%>
+        <li><%= link_to "Sign Out", logout_path %></li>       
+      </ul>
+    </div>
+  </div>
+
+
+
+
 <body>
 
   <div id="user_header">
@@ -20,8 +40,10 @@
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, id: "flash_#{name}" %>
   <% end %>
-
-  <%= yield %>
-
+<div class="content">
+      <div class="container">
+        <%= yield %>
+      </div>
+</div>
 </body>
 </html>
